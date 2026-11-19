@@ -150,6 +150,7 @@ if (product) {
     updateCheckout(product.tamanhos[0]);
     for (const link of checkoutLinks) link.hidden = false;
     for (const element of all("[data-stock], [data-purchase-info]")) element.hidden = true;
+    document.querySelector("#politicas-pendentes").hidden = true;
   }
 }
 
